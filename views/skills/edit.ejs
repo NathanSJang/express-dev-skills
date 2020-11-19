@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Express Dev-Skills</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Edit-Dev-Skills</h1>
+    <form action="/skills/<%= skills.id %>?_method=PUT" method="POST" autocomplete="off">
+      <!-- <label> Comfortable?
+        <input type="checkbox" name="done" <%= skills.id ? 'checked' : '' %>>
+      </label> -->
+      <input type="text" name="skill" vlaue="What">
+      <button type="submit">Add Dev-Skill</button>
+    </form>
+    <a href="/">Home</a> | <a href="/skills">Dev-Skills</a>
+    <a href="/skills/<%= skills.id %>">cancel</a>
+  </body>
+</html>

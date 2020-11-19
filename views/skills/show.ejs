@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Express Dev-Skills</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Dev-Skills</h1>
+    <h3><% skills.skill %></h3>
+    <h3>Comfort: <%= skills.done ? 'Good' : 'Not Yet' %></h3> 
+    <a href="/skills/<%= skills.id %>/edit">Edit-Dev-Skill</a>
+    <a href="/">Home</a> | <a href="/skills">Dev-Skills</a>
+  </body>
+</html>
